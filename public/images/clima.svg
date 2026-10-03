@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450">
+  <defs>
+    <linearGradient id="climaSky" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0284c7"/>
+      <stop offset="60%" stop-color="#38bdf8"/>
+      <stop offset="100%" stop-color="#bae6fd"/>
+    </linearGradient>
+    <linearGradient id="sunGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fef08a"/>
+      <stop offset="100%" stop-color="#f59e0b"/>
+    </linearGradient>
+    <linearGradient id="hillsGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#15803d"/>
+      <stop offset="100%" stop-color="#14532d"/>
+    </linearGradient>
+    <linearGradient id="badgeMundo" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0369a1"/>
+      <stop offset="100%" stop-color="#0ea5e9"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Céu Limpo -->
+  <rect width="800" height="450" fill="url(#climaSky)"/>
+
+  <!-- Sol Radiante de Energia Limpa -->
+  <circle cx="650" cy="110" r="55" fill="url(#sunGrad)"/>
+  <circle cx="650" cy="110" r="85" fill="#fef08a" opacity="0.2"/>
+
+  <!-- Montanhas / Colinas Verdes -->
+  <path d="M 0,320 Q 200,240 400,290 T 800,270 L 800,450 L 0,450 Z" fill="#166534" opacity="0.7"/>
+  <path d="M 0,360 Q 260,300 520,340 T 800,320 L 800,450 L 0,450 Z" fill="url(#hillsGrad)"/>
+
+  <!-- Turbinas Eólicas de Alta Fidelidade -->
+  <!-- Turbina Central Grande -->
+  <g transform="translate(360, 160)">
+    <line x1="0" y1="0" x2="0" y2="190" stroke="#f8fafc" stroke-width="6"/>
+    <circle cx="0" cy="0" r="8" fill="#e2e8f0"/>
+    <!-- Pás da turbina -->
+    <polygon points="0,0 -4,-110 4,-110" fill="#f8fafc"/>
+    <polygon points="0,0 95,55 91,62" fill="#f8fafc"/>
+    <polygon points="0,0 -95,55 -91,62" fill="#f8fafc"/>
+  </g>
+
+  <!-- Turbina Esquerda Média -->
+  <g transform="translate(190, 210) scale(0.75)">
+    <line x1="0" y1="0" x2="0" y2="180" stroke="#f8fafc" stroke-width="5"/>
+    <circle cx="0" cy="0" r="7" fill="#e2e8f0"/>
+    <polygon points="0,0 -4,-100 4,-100" fill="#f8fafc"/>
+    <polygon points="0,0 87,50 83,57" fill="#f8fafc"/>
+    <polygon points="0,0 -87,50 -83,57" fill="#f8fafc"/>
+  </g>
+
+  <!-- Turbina Direita ao Fundo -->
+  <g transform="translate(540, 230) scale(0.6)">
+    <line x1="0" y1="0" x2="0" y2="160" stroke="#f8fafc" stroke-width="5"/>
+    <circle cx="0" cy="0" r="6" fill="#e2e8f0"/>
+    <polygon points="0,0 -4,-90 4,-90" fill="#f8fafc"/>
+    <polygon points="0,0 78,45 74,51" fill="#f8fafc"/>
+    <polygon points="0,0 -78,45 -74,51" fill="#f8fafc"/>
+  </g>
+
+  <!-- Painéis Solares em Perspectiva no Primeiro Plano -->
+  <g fill="#1e3a8a" stroke="#60a5fa" stroke-width="1.5">
+    <polygon points="40,390 180,370 210,430 50,450"/>
+    <polygon points="200,368 340,350 370,410 220,428"/>
+    <polygon points="360,348 500,332 530,392 380,408"/>
+    <!-- Linhas dos painéis -->
+    <line x1="110" y1="380" x2="130" y2="440" stroke="#93c5fd"/>
+    <line x1="270" y1="359" x2="295" y2="419" stroke="#93c5fd"/>
+    <line x1="430" y1="340" x2="455" y2="400" stroke="#93c5fd"/>
+  </g>
+</svg>

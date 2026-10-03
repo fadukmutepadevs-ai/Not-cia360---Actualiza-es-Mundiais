@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450">
+  <defs>
+    <linearGradient id="chipBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#020617"/>
+      <stop offset="50%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#1e1b4b"/>
+    </linearGradient>
+    <linearGradient id="siliconCore" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+    <linearGradient id="badgeTech" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#7c3aed"/>
+      <stop offset="100%" stop-color="#2563eb"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="800" height="450" fill="url(#chipBg)"/>
+
+  <!-- Trilhas de Circuito Impresso (PCB) -->
+  <g stroke="#38bdf8" stroke-width="2" opacity="0.6" fill="none">
+    <path d="M 50,120 L 220,120 L 280,180 L 330,180"/>
+    <path d="M 50,225 L 180,225 L 240,225 L 330,225"/>
+    <path d="M 50,330 L 220,330 L 280,270 L 330,270"/>
+
+    <path d="M 750,120 L 580,120 L 520,180 L 470,180"/>
+    <path d="M 750,225 L 620,225 L 560,225 L 470,225"/>
+    <path d="M 750,330 L 580,330 L 520,270 L 470,270"/>
+
+    <path d="M 280,50 L 280,140 L 370,140 L 370,170"/>
+    <path d="M 520,50 L 520,140 L 430,140 L 430,170"/>
+    <path d="M 280,400 L 280,310 L 370,310 L 370,280"/>
+    <path d="M 520,400 L 520,310 L 430,310 L 430,280"/>
+  </g>
+
+  <!-- Terminais e Soldas Douradas -->
+  <g fill="#f59e0b">
+    <circle cx="50" cy="120" r="4"/>
+    <circle cx="50" cy="225" r="4"/>
+    <circle cx="50" cy="330" r="4"/>
+    <circle cx="750" cy="120" r="4"/>
+    <circle cx="750" cy="225" r="4"/>
+    <circle cx="750" cy="330" r="4"/>
+    <circle cx="280" cy="50" r="4"/>
+    <circle cx="520" cy="50" r="4"/>
+    <circle cx="280" cy="400" r="4"/>
+    <circle cx="520" cy="400" r="4"/>
+  </g>
+
+  <!-- O Processador / Chip Central de Silício -->
+  <g transform="translate(400, 225)">
+    <!-- Dissipador e Base -->
+    <rect x="-110" y="-85" width="220" height="170" rx="12" fill="#090d16" stroke="#475569" stroke-width="3"/>
+    <!-- Núcleo de Processamento Principal -->
+    <rect x="-85" y="-60" width="170" height="120" rx="6" fill="url(#siliconCore)" stroke="#38bdf8" stroke-width="2"/>
+
+    <!-- Padrões internos do Core do Microchip -->
+    <rect x="-70" y="-45" width="60" height="40" fill="#1e3a8a" opacity="0.6"/>
+    <rect x="10" y="-45" width="60" height="40" fill="#1e3a8a" opacity="0.6"/>
+    <rect x="-70" y="5" width="60" height="40" fill="#1e3a8a" opacity="0.6"/>
+    <rect x="10" y="5" width="60" height="40" fill="#1e3a8a" opacity="0.6"/>
+
+    <!-- Gravação laser no Chip -->
+    <text x="0" y="-2" fill="#38bdf8" font-family="system-ui, monospace" font-size="12" font-weight="900" letter-spacing="2" text-anchor="middle">1.8nm ULTRA-EFF</text>
+    <text x="0" y="16" fill="#94a3b8" font-family="system-ui, monospace" font-size="9" text-anchor="middle">LOW POWER ECO-SILICON</text>
+
+    <!-- Brilho de energia reduzida -->
+    <circle cx="0" cy="0" r="70" fill="#38bdf8" opacity="0.08"/>
+  </g>
+</svg>

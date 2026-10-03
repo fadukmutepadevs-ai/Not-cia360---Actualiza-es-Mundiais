@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450">
+  <defs>
+    <linearGradient id="skyGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="50%" stop-color="#1e293b"/>
+      <stop offset="100%" stop-color="#022c22"/>
+    </linearGradient>
+    <linearGradient id="grassGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#15803d"/>
+      <stop offset="100%" stop-color="#166534"/>
+    </linearGradient>
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#b91c1c"/>
+      <stop offset="100%" stop-color="#ea580c"/>
+    </linearGradient>
+    <radialGradient id="lightGlow" cx="50%" cy="20%" r="60%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#0f172a" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Fundo Estádio & Céu Noturno -->
+  <rect width="800" height="450" fill="url(#skyGrad)"/>
+  <rect width="800" height="250" fill="url(#lightGlow)"/>
+
+  <!-- Luzes do Estádio -->
+  <g opacity="0.6">
+    <polygon points="120,40 20,280 220,280" fill="#38bdf8" opacity="0.12"/>
+    <polygon points="680,40 580,280 780,280" fill="#38bdf8" opacity="0.12"/>
+    <circle cx="120" cy="40" r="14" fill="#f8fafc"/>
+    <circle cx="680" cy="40" r="14" fill="#f8fafc"/>
+  </g>
+
+  <!-- Relvado com Perspectiva -->
+  <polygon points="0,220 800,220 800,450 0,450" fill="url(#grassGrad)"/>
+
+  <!-- Linhas do Campo de Futebol em Perspectiva -->
+  <g stroke="#ffffff" stroke-width="3" opacity="0.75" fill="none">
+    <!-- Linhas da grande área -->
+    <polygon points="180,220 620,220 720,450 80,450"/>
+    <line x1="280" y1="220" x2="220" y2="450"/>
+    <line x1="520" y1="220" x2="580" y2="450"/>
+    <!-- Círculo do meio-campo projetado -->
+    <ellipse cx="400" cy="220" rx="90" ry="25"/>
+    <!-- Linha de fundo / golo -->
+    <line x1="0" y1="220" x2="800" y2="220" stroke-width="4"/>
+  </g>
+
+  <!-- Faixas dinâmicas de corte de relva -->
+  <polygon points="100,220 180,220 230,450 140,450" fill="#16a34a" opacity="0.3"/>
+  <polygon points="340,220 420,220 450,450 360,450" fill="#16a34a" opacity="0.3"/>
+  <polygon points="580,220 660,220 710,450 620,450" fill="#16a34a" opacity="0.3"/>
+
+  <!-- Bola de Futebol Vectorial em Destaque -->
+  <g transform="translate(400, 290)">
+    <circle cx="0" cy="0" r="42" fill="#ffffff" filter="drop-shadow(0 10px 15px rgba(0,0,0,0.5))"/>
+    <!-- Painéis do pentágono central -->
+    <polygon points="0,-16 15,-5 9,13 -9,13 -15,-5" fill="#1e293b"/>
+    <!-- Costuras e linhas de gomos -->
+    <line x1="0" y1="-16" x2="0" y2="-40" stroke="#1e293b" stroke-width="3.5"/>
+    <line x1="15" y1="-5" x2="38" y2="-12" stroke="#1e293b" stroke-width="3.5"/>
+    <line x1="9" y1="13" x2="26" y2="34" stroke="#1e293b" stroke-width="3.5"/>
+    <line x1="-9" y1="13" x2="-26" y2="34" stroke="#1e293b" stroke-width="3.5"/>
+    <line x1="-15" y1="-5" x2="-38" y2="-12" stroke="#1e293b" stroke-width="3.5"/>
+    <!-- Gomos periféricos -->
+    <polygon points="0,-40 -12,-38 12,-38" fill="#334155"/>
+    <polygon points="38,-12 40,3 32,-24" fill="#334155"/>
+    <polygon points="-38,-12 -40,3 -32,-24" fill="#334155"/>
+    <!-- Brilho na bola -->
+    <circle cx="-12" cy="-14" r="10" fill="#ffffff" opacity="0.4"/>
+  </g>
+</svg>

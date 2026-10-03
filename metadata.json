@@ -1,0 +1,6 @@
+{
+  "name": "Notícia360 - Actualizações Mundiais",
+  "description": "Portal de notícias rápido, moderno e leve com informação em foco sobre Moçambique e o Mundo.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450">
+  <defs>
+    <linearGradient id="ecoBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#091e17"/>
+      <stop offset="60%" stop-color="#0f2b20"/>
+      <stop offset="100%" stop-color="#1e293b"/>
+    </linearGradient>
+    <linearGradient id="areaFill" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#10b981" stop-opacity="0.45"/>
+      <stop offset="100%" stop-color="#10b981" stop-opacity="0.0"/>
+    </linearGradient>
+    <linearGradient id="badgeGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#059669"/>
+      <stop offset="100%" stop-color="#10b981"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="800" height="450" fill="url(#ecoBg)"/>
+
+  <!-- Linhas de grelha de mercado -->
+  <g stroke="#1e3a2b" stroke-width="1" stroke-dasharray="4 4" opacity="0.6">
+    <line x1="60" y1="100" x2="740" y2="100"/>
+    <line x1="60" y1="180" x2="740" y2="180"/>
+    <line x1="60" y1="260" x2="740" y2="260"/>
+    <line x1="60" y1="340" x2="740" y2="340"/>
+    <line x1="160" y1="60" x2="160" y2="380"/>
+    <line x1="300" y1="60" x2="300" y2="380"/>
+    <line x1="440" y1="60" x2="440" y2="380"/>
+    <line x1="580" y1="60" x2="580" y2="380"/>
+    <line x1="720" y1="60" x2="720" y2="380"/>
+  </g>
+
+  <!-- Candlesticks / Velas Financeiras de Alta e Baixa -->
+  <g stroke-width="2">
+    <!-- Vela 1 (alta) -->
+    <line x1="120" y1="260" x2="120" y2="330" stroke="#10b981"/>
+    <rect x="112" y="275" width="16" height="35" fill="#10b981"/>
+
+    <!-- Vela 2 (alta) -->
+    <line x1="180" y1="230" x2="180" y2="300" stroke="#10b981"/>
+    <rect x="172" y="240" width="16" height="40" fill="#10b981"/>
+
+    <!-- Vela 3 (pequena baixa) -->
+    <line x1="240" y1="240" x2="240" y2="310" stroke="#ef4444"/>
+    <rect x="232" y="250" width="16" height="30" fill="#ef4444"/>
+
+    <!-- Vela 4 (alta expressiva) -->
+    <line x1="320" y1="170" x2="320" y2="270" stroke="#10b981"/>
+    <rect x="312" y="190" width="16" height="60" fill="#10b981"/>
+
+    <!-- Vela 5 (alta) -->
+    <line x1="400" y1="150" x2="400" y2="230" stroke="#10b981"/>
+    <rect x="392" y="165" width="16" height="45" fill="#10b981"/>
+
+    <!-- Vela 6 (recuo técnico) -->
+    <line x1="480" y1="160" x2="480" y2="240" stroke="#ef4444"/>
+    <rect x="472" y="175" width="16" height="35" fill="#ef4444"/>
+
+    <!-- Vela 7 (forte alta) -->
+    <line x1="560" y1="110" x2="560" y2="200" stroke="#10b981"/>
+    <rect x="552" y="125" width="16" height="55" fill="#10b981"/>
+
+    <!-- Vela 8 (topo de valorização) -->
+    <line x1="640" y1="80" x2="640" y2="160" stroke="#10b981"/>
+    <rect x="632" y="95" width="16" height="45" fill="#10b981"/>
+  </g>
+
+  <!-- Curva Contínua de Crescimento Exponencial -->
+  <path d="M 60,340 C 180,310 240,260 320,220 C 400,180 480,185 560,140 C 620,105 680,90 740,75 L 740,380 L 60,380 Z" fill="url(#areaFill)"/>
+  <path d="M 60,340 C 180,310 240,260 320,220 C 400,180 480,185 560,140 C 620,105 680,90 740,75" fill="none" stroke="#34d399" stroke-width="4" filter="drop-shadow(0 0 8px rgba(52,211,153,0.6))"/>
+
+  <!-- Ponto de valorização atual com pulso -->
+  <circle cx="740" cy="75" r="7" fill="#ffffff"/>
+  <circle cx="740" cy="75" r="15" fill="#34d399" opacity="0.4"/>
+</svg>
